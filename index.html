@@ -5,8 +5,92 @@
     <title>HTML Academy: Пинк</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
+    <header class="page-header">
+      <div class="page-header__logo">
+        <img src="img/logo-mobile.png" alt="Логотип PINK" width="75px" height="22px">
+        <button class="page-header__toggle" type="button">Открыть/закрыть</button>
+      </div>
+      <nav class="main-nav main-nav--closed">  <!-- Мы сразу предусматриваем обычное меню и мобильное с closed, -->
+        <ul class="main-nav__items">
+          <li class="main-nav__item"><a href="#">главная</a></li>
+          <li class="main-nav__item"><a href="#">фотографии</a></li>
+          <li class="main-nav__item"><a href="#">конкурс</a></li>
+          <li class="main-nav__item"><a href="#">html academy</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="promote-app">
+      <img src="img/hand-with-mobile.jpg" alt="Скачайте приложение" width="320px" height="395px">
+      <div class="download-app">
+        <a class="download-app__button" href="#">Скачать приложение</a>
+        <div class="vendors-image">
+          <a class="vendors-image__item" href="#"><img src="img/apple-logo.svg" alt="iOS" width="47px" height="56px"></a>   <!-- png? нам не нужен свг для логотипов на большем разрешении? И нужно ли задавать у svg размеры? -->
+          <a class="vendors-image__item" href="#"><img src="img/android-logo.png" alt="Android" width="43px" height="47px"></a>
+          <a class="vendors-image__item" href="#"><img src="img/microsoft-logo.png" alt="Microsoft" width="44px" height="41px"></a>
+        </div>
+      </div>
+    </section>
+    <section class="description"> <!-- Здесь не уверен насёт вложенности и элемнтов -->
+      <div class="description__slogan">
+        Устали от серости мегаполиса? Нам есть что вам предложить!
+      </div>
+      <div class="promo-advantages">
+        <div class="promo-mood">
+          <span class="promo-mood__header">Поднимает настроение</span>
+          <p class="promo-mood__text">
+            Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
+          </p>
+        </div>
+        <div class="promo-world">
+          <span class="promo-world__header">Меняет мир вокруг</span>
+          <p class="promo-world__text">
+            Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
+          </p>
+        </div>
+        <div class="promo-friends">
+          <span class="promo-friends__header">Заводит новых друзей</span>
+          <p class="promo-friends__text">
+            Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
+          </p>
+        </div>
+        <div class="promo-image"> <!-- Нужен блок для изображения? -->
+          <img src="img/iphone-screen.jpg" alt="Всем привет" width="157px" height="320px">
+        </div>
+      </div>
+    </section>
+    <section class="reviews">
+      <div class="user-reviews">
+        <span class="user-reviews__author">Николай Петров</span>
+        <p class="user-reviews__text">
+          «Это приложение перевернуло мой мир и позволило по-новому взгялнуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+        </p>
+      </div>
+      <div class="reviews__slider">
+      </div>
+    </section>
+    <section class="price">
+      <div class="price-include"> <!-- Здесь надо ul? -->
+        Стандарт 3,99 USD  <!-- Это делаем через css или картинкой? -->
+      </div>
+      <div class="price__slider">
+      </div>
+    </section>
+    <section class="address">
+      <div class="address__slogan">
+        Остались вопросы? Свяжитесь с нами!
+      </div> <!-- Это сделал как жлемент от блока, следующий самостоятельный, норм? -->
+      <address class="address-info">  <!-- использовать address или обычный див? -->
+        <span class="address-info__header">Звоните:</span> <!-- Стоит ли давать всем одинаковые названия для простоты редактирвоания? -->
+        <span class="address-info__text">+7 (812) 555-66-66</span>
+        <span class="address-info__header">Пишите:</span>
+        <span class="address-info__text"><a href="mailto:mail@htmlacademy.ru?subject=feedback"></a></span>
+        <span class="address-info__header">Приезжайте в гости:</span>
+        <span class="address-info__text">ул. Большая Конюшенная, 19/8</span>
+      </address>
+      <div class="address__map">
+        <img src="img/map.jpg" alt="Карта" width="320px" height="197px">
+      </div>
+    </section>
 
   </body>
 </html>
