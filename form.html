@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML Academy: Форма</title>
+</head>
+<body>
+  <header class="page-header">
+    <div class="page-header__logo">
+        <a href="index.html"></a>
+      <button class="page-header__toggle  page-header__toggle--closed" type="button">Открыть/закрыть</button> <!-- Модификатор здесь? -->
+    </div>
+    <nav class="main-nav main-nav--closed">
+        <ul class="main-nav__items">
+        <li class="main-nav__item"><a href="#">главная</a></li>
+        <li class="main-nav__item"><a href="#">фотографии</a></li>
+        <li class="main-nav__item"><a href="#">конкурс</a></li>
+        <li class="main-nav__item"><a href="#">html academy</a></li>
+      </ul>
+    </nav>
+    <h1 class="page-header__header">Конкурс на самое безбашенное путешествие с Пинк</h1>
+  </header>
+  <section class="name">
+    <p class="name__text">
+      Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+    </p>
+    <form class="form" action="#" method="post">  <!-- Если я открою форму внутри этого section, а закрою в другом - это будет считаться ошибкой? -->
+    <div class="name__enter"> <!-- надо ли присваивать классы внутри этого дива? -->
+      <label for="id-surname">Фамилия:</label>
+      <input type="text" name="surname" id="id-surname" placeholder="Укажите фамилию">
+    </div>
+    <div class="name__enter">
+      <label for="id-name">Имя:</label>
+      <input type="text" name="name" id="id-name" placeholder="Введите ваше имя">
+    </div>
+    <div class="name__enter">
+      <label for="id-patronymic">Отчество:</label>
+      <input type="text" name="patronymic" id="id-patronymic" placeholder="Ну и отчество тоже">
+    </div>
+  </section>
+  <section class="achievements">
+    <h3 class="achievements__header">ваши безбашенные достижения в путешествии</h3>
+
+    <input checked type="checkbox" name="u-achievements" value="Сделал селфи с акулой" id="ach1">
+    <label for="ach1">Сделал селфи с акулой</label>
+
+    <input checked type="checkbox" name="u-achievements" value="Обгорел на пляже" id="ach2">
+    <label for="ach2">Обгорел на пляже</label>
+
+    <input type="checkbox" name="u-achievements" value="Видел Чака Норриса" id="ach3">
+    <label for="ach3">Видел Чака Норриса</label>
+
+    <input type="checkbox" name="u-achievements" value="Накупил сувениров" id="ach4">
+    <label for="ach4">Накупил сувениров</label>
+
+    <input checked type="checkbox" name="u-achievements" value="Удержал башню" id="ach5">
+    <label for="ach5">Удержал башню</label>
+
+    <input type="checkbox" name="u-achievements" value="Разромил отель" id="ach6">
+    <label for="ach6">Разромил отель</label>
+
+  </section>
+  <section class="contacts">
+      <div class="contacts__enter">  <!-- повторяют name__enter выше => сюда просто копируем css выше? -->
+        <label for="id-telephone">Номерок телефончика:</label>
+        <input type="text" name="telephone" id="id-telephone" placeholder="Номер, пожалуйста">
+      </div>
+      <div class="contacts__enter">
+        <label for="id-email">Введите почту:</label>
+        <input type="text" name="surname" id="id-email" placeholder="Введите почту">
+      </div>
+  </section>
+  <section class="what-app">
+    <h3 class="what-app__header">С каким приложением путешествовали?</h3>
+
+    <input type="radio" name="which-app" value="Pink для iOS" id="rd1">
+    <label for="rd1">Pink для iOS</label>
+
+    <input type="radio" name="which-app" value="Pink на Android" id="rd2">
+    <label for="rd2">Pink на Android</label>
+
+    <input type="radio" name="which-app" value="Windows Phone" id="rd3">
+    <label for="rd3">Windows Phone</label>
+
+  </section>
+  <section class="describe-feelings">
+    <h3 class="describe-feelings__header">Опишите свои эмоции</h3>
+
+    <textarea name="describe-feels" id="feelings-text">Можно прям в красках, не стесняясь в выражениях</textarea>
+    <button class="describe-feelings__send-feels" type="submit" name="button-feels">Отправить форму</button>
+    <small class="describe-feelings__legend"><sup>*</sup> — обязательные поля</small> <!-- Взял из примера -->
+    </form>
+
+  </section>
+  <footer class="page-footer">
+
+    <div class="page-footer__socials">
+      <a class="page-footer__tw" href="#">Twitter</a>
+      <a class="page-footer__fb" href="#">Facebook</a>
+      <a class="page-footer__yt" href="#">YouTube</a>
+    </div>
+    <div class="page-footer__developed">
+      <span class="page-footer__text">Разработано</span>
+    </div>
+
+  </footer>
+
+</body>
+</html>
