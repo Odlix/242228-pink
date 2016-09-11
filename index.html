@@ -7,7 +7,7 @@
   <body>
     <header class="page-header">
       <div class="page-header__logo">
-        <img src="img/logo-mobile.png" alt="Логотип PINK" width="75px" height="22px">
+
         <button class="page-header__toggle" type="button">Открыть/закрыть</button>
       </div>
       <nav class="main-nav">
@@ -18,14 +18,14 @@
           <li class="main-nav__item"><a href="#">html academy</a></li>
         </ul>
       </nav>
-      <img class="promote-app__image" src="img/hand-with-mobile.jpg" alt="Скачайте приложение" width="320" height="395">
+
     </header>
     <section class="promote-app">  <!-- Надо ли изображениям присваивать класс? -->
-      <a class="promote-app__download" href="#">Скачать приложение</a>  <!-- Кнопку оставил отдельным блоком -->
+      <a class="promote-app__download" href="#">Скачать приложение</a>
       <div class="promote-app__icons">
-        <a class="promote-app__icon" href="#"><img src="img/apple-logo.svg" alt="iOS" width="47" height="56"></a>   <!-- png? нам не нужен свг для логотипов на большем разрешении? И нужно ли задавать у svg размеры? -->
-        <a class="promote-app__icon" href="#"><img src="img/android-logo.png" alt="Android" width="43" height="47"></a>
-        <a class="promote-app__icon" href="#"><img src="img/microsoft-logo.png" alt="Microsoft" width="44" height="41"></a>
+        <a class="promote-app__icon" href="#"></a>
+        <a class="promote-app__icon" href="#"></a>
+        <a class="promote-app__icon" href="#"></a>
       </div>
       <p class="promote-app__text">
         Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
@@ -53,7 +53,7 @@
             Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
           </p>
         </div>
-        <img class="description__image" src="img/iphone-screen.jpg" alt="Всем привет" width="157" height="320">
+
       </div>
     </section>
     <section class="reviews">
@@ -68,7 +68,8 @@
     </section>
     <section class="price">
       <div class="price__include">
-        Стандарт 3,99 USD  <!-- Это делаем через css или картинкой? -->
+        <h3 class="price__header">Стандарт</h3>
+        <span class="price__cost">3,99 USD</span>
         <table class="price__table">
           <tr class="price__row">
             <td class="price__column">
@@ -101,15 +102,15 @@
     </section>
     <section class="address">
       <h2 class="address__slogan">Остались вопросы? Свяжитесь с нами!</h2>
-      <address class="address__info">  <!-- использовать address или обычный див? -->
-        <h3 class="address__header">Звоните:</h3> <!-- Стоит ли давать всем одинаковые названия для простоты редактирвоания? -->
+      <address class="address__info">
+        <h3 class="address__header">Звоните:</h3>
         <a class="address__text" href="#">+7 (812) 555-66-66</a>
         <h3 class="address__header">Пишите:</h3>
         <a class="address__text" href="mailto:mail@htmlacademy.ru?subject=feedback"></a>
         <h3 class="address__header">Приезжайте в гости:</h3>
         <a class="address__text" href="#">ул. Большая Конюшенная, 19/8</a>
       </address>
-        <img class="address__map" src="img/map.jpg" alt="Карта" width="320" height="197">
+
     </section>
 
   </body>

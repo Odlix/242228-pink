@@ -7,7 +7,7 @@
 <body>
   <header class="page-header">
     <div class="page-header__logo">
-      <img src="img/logo-mobile.png" alt="Логотип PINK" width="75px" height="22px">
+        <a href="index.html"></a>
       <button class="page-header__toggle  page-header__toggle--closed" type="button">Открыть/закрыть</button> <!-- Модификатор здесь? -->
     </div>
     <nav class="main-nav main-nav--closed">
@@ -18,29 +18,23 @@
         <li class="main-nav__item"><a href="#">html academy</a></li>
       </ul>
     </nav>
-    <img class="promote-app__image" src="img/back-museum.jpg" alt="Музей" width="320" height="171">
+    <h1 class="page-header__header">Конкурс на самое безбашенное путешествие с Пинк</h1>
   </header>
   <section class="name">
-    <div class="name__text">
+    <p class="name__text">
       Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
-    </div>
+    </p>
     <form class="form" action="#" method="post">  <!-- Если я открою форму внутри этого section, а закрою в другом - это будет считаться ошибкой? -->
     <div class="name__enter"> <!-- надо ли присваивать классы внутри этого дива? -->
-      <label for="id-surname">
-        <span>Фамилия:</span>
-      </label>
+      <label for="id-surname">Фамилия:</label>
       <input type="text" name="surname" id="id-surname" placeholder="Укажите фамилию">
     </div>
     <div class="name__enter">
-      <label for="id-name">
-        <span>Имя:</span>
-      </label>
+      <label for="id-name">Имя:</label>
       <input type="text" name="name" id="id-name" placeholder="Введите ваше имя">
     </div>
     <div class="name__enter">
-      <label for="id-patronymic">
-        <span>Отчество:</span>
-      </label>
+      <label for="id-patronymic">Отчество:</label>
       <input type="text" name="patronymic" id="id-patronymic" placeholder="Ну и отчество тоже">
     </div>
   </section>
@@ -68,15 +62,11 @@
   </section>
   <section class="contacts">
       <div class="contacts__enter">  <!-- повторяют name__enter выше => сюда просто копируем css выше? -->
-        <label for="id-telephone">
-          <span>Номерок телефончика:</span>
-        </label>
+        <label for="id-telephone">Номерок телефончика:</label>
         <input type="text" name="telephone" id="id-telephone" placeholder="Номер, пожалуйста">
       </div>
       <div class="contacts__enter">
-        <label for="id-email">
-          <span>Введите почту:</span> <!-- надо ли присваивать классы внутри этого дива? -->
-        </label>
+        <label for="id-email">Введите почту:</label>
         <input type="text" name="surname" id="id-email" placeholder="Введите почту">
       </div>
   </section>
@@ -94,22 +84,25 @@
 
   </section>
   <section class="describe-feelings">
-    <h3 class="describe-feelings__header"></h3>
+    <h3 class="describe-feelings__header">Опишите свои эмоции</h3>
 
     <textarea name="describe-feels" id="feelings-text">Можно прям в красках, не стесняясь в выражениях</textarea>
-    <button class="send-feels" type="submit" name="button-feels">Отправить форму</button>
-    </form>
+    <button class="describe-feelings__send-feels" type="submit" name="button-feels">Отправить форму</button>
     <small class="describe-feelings__legend"><sup>*</sup> — обязательные поля</small> <!-- Взял из примера -->
+    </form>
 
   </section>
   <footer class="page-footer">
-    <img class=page-footer__image src="img/Pink-logo-big.png" alt="Pink" width="147" height="40">
+
     <div class="page--footer__socials">
       <a class="page--footer__tw" href="#">Twitter</a>
       <a class="page--footer__fb" href="#">Facebook</a>
       <a class="page--footer__yt" href="#">YouTube</a>
     </div>
-    <span class="page--footer__developed">Разработано</span>
+    <div class="page--footer__developed">
+      <span class="page--footer__text">Разработано</span>
+    </div>
+
   </footer>
 
 </body>
