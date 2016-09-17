@@ -12,16 +12,18 @@
   padding-top: 25px;
   padding-bottom: 23px;
   background-color: @main-nav-bg;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 0 black;
+  box-shadow: @box-shadow-menu-li;
+  text-align: center;
 }
 
-.main-nav__item a {  /* Можно ли так?? */
+.main-nav__link {
   text-decoration: none;
-  color: white;
+  color: @main-nav-color-link;
   font-size: 18px;
   font-weight: 700;
   line-height: 32px;
   text-transform: uppercase;
-  margin-left: auto;
-  margin-right: auto; /* Выравние по центру не удалось */
+  // margin-left: auto;
+  // margin-right: auto; /* Выравние по центру не удалось */
+
 }

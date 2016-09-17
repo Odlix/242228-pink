@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&subset=cyrillic">
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&subset=cyrillic"> -->
   </head>
   <body>
     <header class="page-header">
@@ -14,10 +14,10 @@
       </div>
       <nav class="main-nav">
           <ul class="main-nav__items">
-          <li class="main-nav__item"><a href="#">главная</a></li>
-          <li class="main-nav__item"><a href="#">фотографии</a></li>
-          <li class="main-nav__item"><a href="#">конкурс</a></li>
-          <li class="main-nav__item"><a href="#">html academy</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="index.html">главная</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="photo.html">фотографии</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="form.html">конкурс</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="#">html academy</a></li>
         </ul>
       </nav>
 
@@ -70,32 +70,28 @@
     </section>
     <section class="price">
       <div class="price__include">
-        <h3 class="price__header">Стандарт</h3>
-        <span class="price__cost">3,99 USD</span>
+        <div class="price__description">
+          <h3 class="price__header">Стандарт</h3>
+          <span class="price__cost">3,99 USD</span>
+        </div>
         <table class="price__table">
           <tr class="price__row">
             <td class="price__column">
-              Розовый фильтр
+              <span class="price__option-text">Розовый фильтр</span>
             </td>
-            <td class="price__column">
-              <!-- для галочки? -->
-            </td>
+
           </tr>
           <tr class="price__row">
             <td class="price__column">
-              Смайлики
+              <span class="price__option-text">Смайлики</span>
             </td>
-            <td class="price__column">
 
-            </td>
           </tr>
           <tr class="price__row">
             <td class="price__column">
-              Комментарии
+              <span class="price__option-text">Комментарии</span>
             </td>
-            <td class="price__column">
 
-            </td>
           </tr>
         </table>
       </div>
