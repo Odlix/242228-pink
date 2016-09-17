@@ -1,0 +1,27 @@
+.contacts {
+  margin-top: 40px;
+}
+
+.contacts__label-input {
+  color: @contacts__label-input-color;
+  font-family: @font-family-light;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.contacts__input {
+  font-family: @font-family-light;
+  color: @contacts__input-color-text;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+
+  box-sizing: border-box;
+  .contacts__input-size; /* mixin */
+
+  border: @contacts__input-border;
+  padding: @contacts__input-padding;
+  margin-bottom: 26px;
+}
