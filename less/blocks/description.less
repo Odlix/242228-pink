@@ -1,3 +1,7 @@
+.description {
+  .container();
+}
+
 .description__slogan {
   font-family: @font-family-light;
   color: @description__slogan-color;
@@ -26,4 +30,46 @@
   color: @description-text-color;
   font-size: 14px;
   font-weight: 400;
+}
+
+.description__effect {
+  display: none;
+}
+
+
+@media @tablet-widths {
+  .description__slogan--shorter {
+    width: 325px;
+    margin: auto;
+
+  }
+  .description__advantages {
+    padding-left: 300px;
+  }
+
+  .description__effect {
+    display: block;
+    width: 295px;
+  
+  }
+
+}
+
+@media @desktop-widths {
+  .description__item {
+    display: inline-block;
+    vertical-align: top;
+
+    width: 300px;
+  }
+  .description__advantages {
+    padding-left: 0px;
+
+  }
+
+  .description__effect {
+    display: block;
+    width: 535px;
+  }
+
 }

@@ -1,4 +1,6 @@
 .reviews__item {
+  position: relative;
+
   padding-top: 50px;
   text-align: center;
 }
@@ -14,6 +16,8 @@
 }
 
 .reviews__text {
+
+
   font-family: @font-family-light;
   font-size: 14px;
   font-weight: 400;
@@ -24,4 +28,28 @@
 
 .reviews__slider {
   margin-bottom: 45px;
+}
+
+.reviews__author-who {
+  display: none;
+}
+
+
+@media @tablet-widths {
+  .reviews__item {
+    margin-bottom: 140px;
+  }
+
+  .reviews__author-desciption {
+    position: absolute;
+    bottom: -100px;
+  }
+
+  .reviews__author-who {
+    display: block;
+  }
+}
+
+@media @desktop-widths { /* почему не работает.. */
+  display: none;
 }

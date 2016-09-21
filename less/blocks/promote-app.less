@@ -1,10 +1,13 @@
 .promote-app {
+  // .container();
+
   background-color: @promote-app-bg;
   padding-top: 30px;
+  min-height: 270px;
 }
 
-// .promote-app a {
 .promote-app__download {
+  // .container();
 
   font-family: @font-family-bold;
   font-size: 18px;
@@ -15,9 +18,29 @@
 }
 
 .promote-app__text {
+  // .container();
+
   font-family: @font-family-light;
   color: @promote-app-color-text;
   font-size: 14px;
   font-weight: 300;
   line-height: 24px;
+}
+
+
+@media @tablet-widths {
+
+  .promote-app {
+    // width: 300px;
+    background: green;
+  }
+}
+
+@media @desktop-widths {
+
+  .promote-app {
+    width: 310px;
+    background: blue;
+  }
+
 }
