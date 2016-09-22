@@ -1,3 +1,12 @@
+.reviews {
+  
+}
+
+.reviews__wrapper {
+  .container();
+  .clearfix();
+}
+
 .reviews__item {
   position: relative;
 
@@ -16,8 +25,6 @@
 }
 
 .reviews__text {
-
-
   font-family: @font-family-light;
   font-size: 14px;
   font-weight: 400;
@@ -43,13 +50,24 @@
   .reviews__author-desciption {
     position: absolute;
     bottom: -100px;
+    left: 40%;
+  }
+
+  .reviews__author {
+    font-size: 20px;
+    font-weight: 700;
   }
 
   .reviews__author-who {
     display: block;
   }
+
+  .reviews__text {
+    font-size: 18px;
+  }
 }
 
 @media @desktop-widths { /* почему не работает.. */
-  display: none;
+  // display: none;
+
 }

@@ -1,15 +1,20 @@
 .main-nav {
-  width: 320px;
+
+  // width: 320px;
   margin: 0 auto;
 }
 
-.main-nav__items {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+.main-nav__wrapper {
+  .container();
+  .clearfix();
 }
 
 .main-nav__items {
+  // .container();
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
   min-height: 255px;
 }
 
@@ -59,8 +64,7 @@
   .main-nav__item {
     padding-top: 45px;
     padding-bottom: 45px;
-    // background-color: @main-nav-bg;
-    background: red;
+    // background-color: transparent;
     box-shadow: none;
     text-align: center;
   }

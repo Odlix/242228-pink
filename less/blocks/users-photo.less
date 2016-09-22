@@ -1,5 +1,11 @@
 .users-photo {
+
+
   margin-top: 55px;
+}
+
+.users-photo__wrapper {
+  .container();
 }
 
 .users-photo__motivate {
@@ -9,6 +15,8 @@
 
 .users-photo__item {
   color: @users-photo__text-color;
+
+  background: grey;  /* вспомогательный */
 }
 
 .users-photo__text {
@@ -55,4 +63,41 @@
   font-weight: 400;
   line-height: 24px;
   text-transform: uppercase;
+}
+
+@media @tablet-widths {
+  .page-header__header {
+    font-size: 50px;
+    margin-top: 350px;
+  }
+
+  .users-photo__text {
+    font-size: 18px;
+  }
+
+  .users-photo__item {
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+    width: 300px;
+    height: 455px;
+
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 27px;
+
+    margin-right: 7px; /* потом nth- child убрать margin у вторых */
+    margin-bottom: 20px;
+  }
+
+  .users-photo__item--daily {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+}
+
+@media @desktop-widths {
+  .users-photo__item {
+    margin-bottom: 50px;
+  }
 }
