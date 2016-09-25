@@ -2,11 +2,25 @@
 
 }
 
+.name__wrapper {
+  .container();
+}
+
 .name__text {
   color: @name__text;
   font-family: @font-family-light;
   font-size: 14px;
   line-height: 30px;
+
+  width: 500px;
+  margin: 0 auto;
+}
+
+.name__text--hidden {
+  display: none;
+  margin: 0 auto;
+
+  margin-bottom: 50px;
 }
 
 .name__label-input {
@@ -27,8 +41,45 @@
 
   box-sizing: border-box;
   .name__input-size; /* mixin */
+  width: 100%;
 
   border: @name__input-border;
   padding: @name__input-padding;
   margin-bottom: 26px;
+}
+
+
+@media @tablet-widths {
+  .name__text {
+    font-size: 18px;
+  }
+
+  .name__enter {
+    position: relative;
+  }
+
+  .name__label-input {
+    position: absolute;
+    top: 20px;
+  }
+
+  .name__input {
+    // width: auto;
+    margin-left: 95px;
+  }
+
+  .name__text {
+    &--hidden {
+      display: block;
+      padding-left: 100px;
+    }
+  }
+
+}
+
+@media @desktop-widths {
+  .name__enter-items {
+    width: 470px;
+    // float: left;
+  }
 }

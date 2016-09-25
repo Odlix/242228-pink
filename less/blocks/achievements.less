@@ -1,5 +1,11 @@
 .achievements {
+
+
   margin-top: 45px;
+}
+
+.achievements__wrapper {
+  .container();
 }
 
 .achievements__header {
@@ -70,4 +76,15 @@ input[type="checkbox"]:checked + label::before {
   background-color: red;
 
   margin-right: 30px;
+}
+
+@media @tablet-widths {
+
+}
+
+@media @desktop-widths {
+  input[type="checkbox"] + .achievements__label {
+    display: inline-block;
+    margin-right: 50px;
+  }
 }

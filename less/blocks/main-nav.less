@@ -1,11 +1,21 @@
 .main-nav {
 
+  // width: 320px;
+  margin: 0 auto;
+}
+
+.main-nav__wrapper {
+  .container();
+  .clearfix();
 }
 
 .main-nav__items {
+  // .container();
   margin: 0;
   padding: 0;
   list-style: none;
+
+  min-height: 255px;
 }
 
 .main-nav__item {
@@ -23,7 +33,50 @@
   font-weight: 700;
   line-height: 32px;
   text-transform: uppercase;
-  // margin-left: auto;
-  // margin-right: auto; /* Выравние по центру не удалось */
+
+}
+
+@media @tablet-widths {
+
+  .main-nav {
+    width: auto;
+    min-height: 250px;
+  }
+
+}
+
+@media @desktop-widths {
+
+  .main-nav {
+    min-height: 0;  /* Хотел обнулить от планшетной и мобильной версии min-height, он почему-то не перезаписался min-height дестопной версии */
+    height: 115px;
+    width: 750px;
+  }
+
+  .main-nav__items {
+    min-height: 0;
+  }
+
+  .main-nav__item {
+    display: inline-block;
+  }
+
+  .main-nav__item {
+    padding-top: 45px;
+    padding-bottom: 45px;
+    // background-color: transparent;
+    box-shadow: none;
+    text-align: center;
+  }
+
+  .main-nav__link {
+    text-decoration: none;
+    color: @main-nav-color-link;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 18px;
+    text-transform: uppercase;
+
+  }
 
 }

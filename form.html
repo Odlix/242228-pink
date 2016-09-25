@@ -3,107 +3,124 @@
 <head>
   <meta charset="UTF-8">
   <title>HTML Academy: Форма</title>
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
   <header class="page-header">
     <div class="page-header__logo">
         <a href="index.html"></a>
       <button class="page-header__toggle  page-header__toggle--closed" type="button">Открыть/закрыть</button> <!-- Модификатор здесь? -->
+      <nav class="main-nav main-nav--closed">
+        <div class="main-nav__wrapper">
+            <ul class="main-nav__items">
+              <li class="main-nav__item"><a class="main-nav__link" href="index.html">главная</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="photo.html">фотографии</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="form.html">конкурс</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="#">html academy</a></li>
+          </ul>
+        </div>
+      </nav>
     </div>
-    <nav class="main-nav main-nav--closed">
-        <ul class="main-nav__items">
-        <li class="main-nav__item"><a class="main-nav__link" href="index.html">главная</a></li>
-        <li class="main-nav__item"><a class="main-nav__link" href="photo.html">фотографии</a></li>
-        <li class="main-nav__item"><a class="main-nav__link" href="form.html">конкурс</a></li>
-        <li class="main-nav__item"><a class="main-nav__link" href="#">html academy</a></li>
-      </ul>
-    </nav>
+
     <h1 class="page-header__header">Конкурс на самое безбашенное путешествие с Пинк</h1>
   </header>
   <section class="name">
-    <p class="name__text">
-      Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
-    </p>
-    <form class="form" action="#" method="post">
-    <div class="name__enter">
-      <label class="name__label-input" for="id-surname">Фамилия:</label>
-      <input class="name__input" type="text" name="surname" id="id-surname" placeholder="Укажите фамилию">
-    </div>
-    <div class="name__enter">
-      <label class="name__label-input" for="id-name">Имя:</label>
-      <input class="name__input" type="text" name="name" id="id-name" placeholder="Введите ваше имя">
-    </div>
-    <div class="name__enter">
-      <label class="name__label-input" for="id-patronymic">Отчество:</label>
-      <input class="name__input" type="text" name="patronymic" id="id-patronymic" placeholder="Ну и отчество тоже">
+    <div class="name__wrapper">
+      <p class="name__text">
+        Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+      </p>
+      <p class="name__text name__text--hidden">
+        Пожалуйста, заполните форму ниже:
+      </p>
+      <form class="form" action="#" method="post">
+      <div class="name__enter-items">
+      <div class="name__enter">
+        <label class="name__label-input" for="id-surname">Фамилия:</label>
+        <input class="name__input" type="text" name="surname" id="id-surname" placeholder="Укажите фамилию">
+      </div>
+      <div class="name__enter">
+        <label class="name__label-input" for="id-name">Имя:</label>
+        <input class="name__input" type="text" name="name" id="id-name" placeholder="Введите ваше имя">
+      </div>
+      <div class="name__enter">
+        <label class="name__label-input" for="id-patronymic">Отчество:</label>
+        <input class="name__input" type="text" name="patronymic" id="id-patronymic" placeholder="Ну и отчество тоже">
+      </div>
+      </div>
     </div>
   </section>
   <section class="achievements">
-    <h3 class="achievements__header">ваши безбашенные достижения в путешествии</h3>
+    <div class="achievements__wrapper">
+      <h3 class="achievements__header">ваши безбашенные достижения в путешествии</h3>
 
-    <input class="achievements__input" checked type="checkbox" name="u-achievements" value="Сделал селфи с акулой" id="ach1">
-    <label class="achievements__label" for="ach1">Сделал селфи с акулой</label>
+      <input class="achievements__input" checked type="checkbox" name="u-achievements" value="Сделал селфи с акулой" id="ach1">
+      <label class="achievements__label" for="ach1">Сделал селфи с акулой</label>
 
-    <input class="achievements__input" checked type="checkbox" name="u-achievements" value="Обгорел на пляже" id="ach2">
-    <label class="achievements__label" for="ach2">Обгорел на пляже</label>
+      <input class="achievements__input" checked type="checkbox" name="u-achievements" value="Обгорел на пляже" id="ach2">
+      <label class="achievements__label" for="ach2">Обгорел на пляже</label>
 
-    <input class="achievements__input" type="checkbox" name="u-achievements" value="Видел Чака Норриса" id="ach3">
-    <label class="achievements__label" for="ach3">Видел Чака Норриса</label>
+      <input class="achievements__input" type="checkbox" name="u-achievements" value="Видел Чака Норриса" id="ach3">
+      <label class="achievements__label" for="ach3">Видел Чака Норриса</label>
 
-    <input class="achievements__input" type="checkbox" name="u-achievements" value="Накупил сувениров" id="ach4">
-    <label class="achievements__label" for="ach4">Накупил сувениров</label>
+      <input class="achievements__input" type="checkbox" name="u-achievements" value="Накупил сувениров" id="ach4">
+      <label class="achievements__label" for="ach4">Накупил сувениров</label>
 
-    <input class="achievements__input" checked type="checkbox" name="u-achievements" value="Удержал башню" id="ach5">
-    <label class="achievements__label" for="ach5">Удержал башню</label>
+      <input class="achievements__input" checked type="checkbox" name="u-achievements" value="Удержал башню" id="ach5">
+      <label class="achievements__label" for="ach5">Удержал башню</label>
 
-    <input class="achievements__input" type="checkbox" name="u-achievements" value="Разромил отель" id="ach6">
-    <label class="achievements__label" for="ach6">Разромил отель</label>
-
+      <input class="achievements__input" type="checkbox" name="u-achievements" value="Разромил отель" id="ach6">
+      <label class="achievements__label" for="ach6">Разромил отель</label>
+    </div>
   </section>
   <section class="contacts">
-      <div class="contacts__enter">  <!-- повторяют name__enter выше => сюда просто копируем css выше? -->
-        <label class="contacts__label-input" for="id-telephone">Номерок телефончика:</label>
-        <input class="contacts__input" type="text" name="telephone" id="id-telephone" placeholder="Номер, пожалуйста">
-      </div>
-      <div class="contacts__enter">
-        <label class="contacts__label-input" for="id-email">Введите почту:</label>
-        <input class="contacts__input" type="text" name="surname" id="id-email" placeholder="Введите почту">
-      </div>
+    <div class="contacts__wrapper">
+        <div class="contacts__enter">
+          <label class="contacts__label-input" for="id-telephone">Номерок телефончика:</label>
+          <input class="contacts__input" type="text" name="telephone" id="id-telephone" placeholder="Номер, пожалуйста">
+        </div>
+        <div class="contacts__enter">
+          <label class="contacts__label-input" for="id-email">Введите почту:</label>
+          <input class="contacts__input" type="text" name="surname" id="id-email" placeholder="Введите почту">
+        </div>
+    </div>
   </section>
   <section class="what-app">
-    <h3 class="what-app__header">С каким приложением путешествовали?</h3>
+    <div class="what-app__wrapper">
+      <h3 class="what-app__header">С каким приложением путешествовали?</h3>
 
-    <input class="what-app__input" checked type="radio" name="which-app" value="Pink для iOS" id="rd1">
-    <label class="what-app__label" for="rd1">Pink для iOS</label>
+      <input class="what-app__input" checked type="radio" name="which-app" value="Pink для iOS" id="rd1">
+      <label class="what-app__label" for="rd1">Pink для iOS</label>
 
-    <input class="what-app__input" type="radio" name="which-app" value="Pink на Android" id="rd2">
-    <label class="what-app__label" for="rd2">Pink на Android</label>
+      <input class="what-app__input" type="radio" name="which-app" value="Pink на Android" id="rd2">
+      <label class="what-app__label" for="rd2">Pink на Android</label>
 
-    <input class="what-app__input" type="radio" name="which-app" value="Windows Phone" id="rd3">
-    <label class="what-app__label" for="rd3">Windows Phone</label>
-
+      <input class="what-app__input" type="radio" name="which-app" value="Windows Phone" id="rd3">
+      <label class="what-app__label" for="rd3">Windows Phone</label>
+    </div>
   </section>
   <section class="describe-feelings">
-    <h3 class="describe-feelings__header">Опишите свои эмоции</h3>
+    <div class="describe-feelings__wrapper">
+      <h3 class="describe-feelings__header">Опишите свои эмоции</h3>
 
-    <textarea class="describe-feelings__area" name="describe-feels" id="feelings-text">Можно прям в красках, не стесняясь в выражениях</textarea>
-    <button class="describe-feelings__send-feels" type="submit" name="button-feels">Отправить форму</button>
-    <small class="describe-feelings__legend"><sup class="describe-feelings__small">*</sup> — обязательные поля</small> <!-- Взял из примера -->
-    </form>
-
+      <textarea class="describe-feelings__area" name="describe-feels" id="feelings-text">Можно прям в красках, не стесняясь в выражениях</textarea>
+      <button class="describe-feelings__send-feels" type="submit" name="button-feels">Отправить форму</button>
+      <small class="describe-feelings__legend"><sup class="describe-feelings__small">*</sup> — обязательные поля</small> <!-- Взял из примера -->
+      </form>
+    </div>
   </section>
   <footer class="page-footer">
-
-    <div class="page-footer__socials">
-      <a class="page-footer__tw" href="#">Twitter</a>
-      <a class="page-footer__fb" href="#">Facebook</a>
-      <a class="page-footer__yt" href="#">YouTube</a>
-    </div>
-    <div class="page-footer__developed">
+    <div class="page-footer__wrapper">
+      <div class="page-footer__socials">
+        <a class="page-footer__tw" href="#">Twitter</a>
+        <a class="page-footer__fb" href="#">Facebook</a>
+        <a class="page-footer__yt" href="#">YouTube</a>
+      </div>
+      <div class="page-footer__developed">
       <span class="page-footer__text">Разработано</span>
     </div>
-
+    </div>
   </footer>
 
 </body>

@@ -1,3 +1,12 @@
+.description {
+  background-color: @description-bg;
+}
+
+.description__wrapper {
+  .container();
+  .clearfix();
+}
+
 .description__slogan {
   font-family: @font-family-light;
   color: @description__slogan-color;
@@ -7,7 +16,7 @@
 }
 
 .description__advantages {
-  background-color: @description-bg;
+  // background-color: @description-bg;
 }
 
 .description__item {
@@ -26,4 +35,69 @@
   color: @description-text-color;
   font-size: 14px;
   font-weight: 400;
+}
+
+.description__effect {
+  display: none;
+}
+
+
+@media @tablet-widths {
+  .description__slogan {
+    &--shorter {
+      width: 325px;
+      margin: auto;
+      }
+      margin-top: 0;
+      margin-bottom: 0;
+  }
+  .description__advantages {
+    padding-left: 300px;
+  }
+
+  .description__effect {
+    display: block;
+    margin-top: 100px;
+    width: 295px;
+  }
+
+  .description__link {
+    color: @description__link-color;
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+
+}
+
+@media @desktop-widths {
+  .description__item {
+    display: inline-block;
+    vertical-align: top;
+
+    width: 180px;
+
+    margin-right: 95px;
+    margin-left: 30px;
+  }
+
+  .description__text {
+    font-size: 18px;
+  }
+
+  .description__advantages {
+    padding-left: 0px;
+
+  }
+
+  .description__effect {
+    display: block;
+    width: 535px;
+    padding-left: 370px;
+  }
+
+  .description__link {
+    font-size: 18px;
+  }
+
 }

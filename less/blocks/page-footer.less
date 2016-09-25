@@ -1,7 +1,17 @@
 .page-footer {
+
+
   margin: 0 auto;
   margin-top: 65px;
 
+}
+
+.page-footer__wrapper {
+  .container();
+}
+
+.page-footer--hidden {
+  display: none;
 }
 
 .page-footer__socials {
@@ -14,4 +24,14 @@
   font-weight: 400;
   line-height: 18px;
   color: @page-footer__text-color;
+}
+
+@media @tablet-widths {
+  .page-footer--hidden {
+    display: block;
+  }
+}
+
+@media @desktop-widths {
+
 }
