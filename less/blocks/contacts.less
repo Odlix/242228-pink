@@ -2,6 +2,11 @@
   margin-top: 40px;
 }
 
+.contacts__wrapper {
+  .container();
+  .clearfix();
+}
+
 .contacts__label-input {
   color: @contacts__label-input-color;
   font-family: @font-family-light;
@@ -24,4 +29,31 @@
   border: @contacts__input-border;
   padding: @contacts__input-padding;
   margin-bottom: 26px;
+}
+
+@media @tablet-widths {
+  .contacts__enter {
+    position: relative;
+  }
+
+  .contacts__label-input {
+    position: absolute;
+    bottom: 25px;
+  }
+
+  .contacts__input {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+}
+
+@media @desktop-widths {
+  .contacts__enter {
+    display: inline-block;
+    margin-right: 75px;
+  }
+
+  .contacts__input {
+    width: 375px;
+  }
 }

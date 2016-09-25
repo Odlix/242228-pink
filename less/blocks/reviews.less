@@ -1,4 +1,15 @@
+.reviews {
+  
+}
+
+.reviews__wrapper {
+  .container();
+  .clearfix();
+}
+
 .reviews__item {
+  position: relative;
+
   padding-top: 50px;
   text-align: center;
 }
@@ -24,4 +35,39 @@
 
 .reviews__slider {
   margin-bottom: 45px;
+}
+
+.reviews__author-who {
+  display: none;
+}
+
+
+@media @tablet-widths {
+  .reviews__item {
+    margin-bottom: 140px;
+  }
+
+  .reviews__author-desciption {
+    position: absolute;
+    bottom: -100px;
+    left: 40%;
+  }
+
+  .reviews__author {
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  .reviews__author-who {
+    display: block;
+  }
+
+  .reviews__text {
+    font-size: 18px;
+  }
+}
+
+@media @desktop-widths { /* почему не работает.. */
+  // display: none;
+
 }

@@ -1,7 +1,12 @@
 .address {
+
   padding-top: 50px;
   font-style: normal;  /* Не работает */
   text-align: center;
+}
+
+.address__wrapper {
+  .container();
 }
 
 .address__slogan {
@@ -31,4 +36,31 @@
   color: @address__text;
   text-decoration: none;
 
+}
+
+@media @tablet-widths {
+  .address__slogan {
+    margin: 0 auto;
+    width: 380px;
+    margin-bottom: 50px;
+    font-size: 40px;
+    font-weight: 300;
+
+  }
+
+  .address__item {
+    display: inline-block;
+    margin-right: 80px;
+  }
+}
+
+@media @desktop-widths {
+  .address__item {
+    vertical-align: top;
+    width: 230px;
+  }
+
+  .address__item:last-child {  /* переместить в центр */
+    // color: green;
+  }
 }

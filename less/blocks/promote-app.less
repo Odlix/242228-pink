@@ -1,10 +1,28 @@
 .promote-app {
+  // .container();
+
   background-color: @promote-app-bg;
   padding-top: 30px;
+  min-height: 270px;
 }
 
-// .promote-app a {
+.promote-app__wrapper {
+  .container();
+  .clearfix();
+}
+
+.promote-app__header {
+  display: none;
+
+  font-family: @font-family-light;
+  color: @promote-app-color-text;
+  font-size: 40px;
+  font-weight: 300;
+
+}
+
 .promote-app__download {
+  // .container();
 
   font-family: @font-family-bold;
   font-size: 18px;
@@ -15,9 +33,34 @@
 }
 
 .promote-app__text {
+  // .container();
+
   font-family: @font-family-light;
   color: @promote-app-color-text;
   font-size: 14px;
   font-weight: 300;
   line-height: 24px;
+}
+
+@media @tablet-widths {
+
+  .promote-app {
+    // width: 310px;
+  }
+
+  .promote-app__header {
+    display: block;
+  }
+
+  .promote-app__text {
+    font-size: 18px;
+  }
+}
+
+@media @desktop-widths {
+
+  .promote-app__header {
+    font-size: 50px;
+  }
+
 }

@@ -2,6 +2,11 @@
   margin-top: 60px;
 }
 
+.describe-feelings__wrapper {
+  .container();
+  .clearfix();
+}
+
 .describe-feelings__header {
   color: @describe-feelings__header-color;
   font-family: @font-family-light;
@@ -33,4 +38,19 @@
 
 .describe-feelings__small {
   color: @describe-feelings__small-color;
+}
+
+@media @tablet-widths {
+  .describe-feelings__area {
+    width: 100%;
+  }
+
+  .describe-feelings__legend {
+    
+    float: right;
+  }
+}
+
+@media @desktop-widths {
+
 }

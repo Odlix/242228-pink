@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>HTML Academy: Форма</title>
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -10,111 +11,113 @@
     <div class="page-header__logo">
       <a href="index.html"></a>
       <button class="page-header__toggle  page-header__toggle--closed" type="button">Открыть/закрыть</button> <!-- Модификатор здесь? -->
+      <nav class="main-nav main-nav--closed">
+        <div class="main-nav__wrapper">
+            <ul class="main-nav__items">
+              <li class="main-nav__item"><a class="main-nav__link" href="index.html">главная</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="photo.html">фотографии</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="form.html">конкурс</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="#">html academy</a></li>
+          </ul>
+        </div>
+      </nav>
     </div>
-    <nav class="main-nav main-nav--closed">
-        <ul class="main-nav__items">
-        <li class="main-nav__item"><a class="main-nav__link" href="index.html">главная</a></li>
-        <li class="main-nav__item"><a class="main-nav__link" href="photo.html">фотографии</a></li>
-        <li class="main-nav__item"><a class="main-nav__link" href="form.html">конкурс</a></li>
-        <li class="main-nav__item"><a class="main-nav__link" href="#">html academy</a></li>
-      </ul>
-    </nav>
+
     <h1 class="page-header__header">Фотографии пользователей</h1>
   </header>
   <section class="users-photo">
-    <div class="users-photo__motivate">
-      <p class="users-photo__text">
-        Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
-      </p>
-    </div>
-    <article class="users-photo__item">
+    <div class="users-photo__wrapper">
+      <div class="users-photo__motivate">
+        <p class="users-photo__text">
+          Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
+        </p>
+      </div>
+      <article class="users-photo__item users-photo__item--daily">
 
-      <h1 class="users-photo__author">Анна<span class="users-photo__when">5 минут назад</span></h1>
-      <a class="users-photo__text">
-        Прыгать или нет? Напишите в комментариях свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!
-      </a>
-      <a class="users-photo__liked">Нравится: 215</a>
-    </article>
-    <article class="users-photo__item">
+        <h1 class="users-photo__author">Анна<span class="users-photo__when">5 минут назад</span></h1>
+        <a class="users-photo__text">
+          Прыгать или нет? Напишите в комментариях свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!
+        </a>
+        <a class="users-photo__liked">Нравится: 215</a>
+      </article>
+      <article class="users-photo__item">
 
-      <h1 class="users-photo__author">Левон<span class="users-photo__when">5 часов назад</span></h1>
-      <a class="users-photo__text">
-        Вчера он на луну летал, сегодня в руки к нам попал.
-      </a>
-      <a class="users-photo__liked">Нравится: 356</a>
-    </article>
-    <article class="users-photo__item">
+        <h1 class="users-photo__author">Левон<span class="users-photo__when">5 часов назад</span></h1>
+        <a class="users-photo__text">
+          Вчера он на луну летал, сегодня в руки к нам попал.
+        </a>
+        <a class="users-photo__liked">Нравится: 356</a>
+      </article>
+      <article class="users-photo__item">
 
-      <h1 class="users-photo__author">Антон<span class="users-photo__when">12 часов назад</span></h1>
-      <a class="users-photo__text">
-        Соседи будут рады!
-      </a>
-      <a class="users-photo__liked">Нравится: 666</a>
-    </article>
-    <article class="users-photo__item">
+        <h1 class="users-photo__author">Антон<span class="users-photo__when">12 часов назад</span></h1>
+        <a class="users-photo__text">
+          Соседи будут рады!
+        </a>
+        <a class="users-photo__liked">Нравится: 666</a>
+      </article>
+      <article class="users-photo__item">
 
-      <h1 class="users-photo__author">Борис<span class="users-photo__when">20 часов назад</span></h1>
-      <a class="users-photo__text">
-        Здесь могла быть ваша цитата о высоком и вечном.
-      </a>
-      <a class="users-photo__liked">Нравится: 215</a>
-    </article>
-    <article class="users-photo__item">
+        <h1 class="users-photo__author">Борис<span class="users-photo__when">20 часов назад</span></h1>
+        <a class="users-photo__text">
+          Здесь могла быть ваша цитата о высоком и вечном.
+        </a>
+        <a class="users-photo__liked">Нравится: 215</a>
+      </article>
+      <article class="users-photo__item">
 
-      <h1 class="users-photo__author">Сергей<span class="users-photo__when">25 часов назад</span></h1>
-      <a class="users-photo__text">
-        Самая кубанская в мире!
-      </a>
-      <a class="users-photo__liked">Нравится: 4</a>
-    </article>
-    <article class="users-photo__item">
+        <h1 class="users-photo__author">Сергей<span class="users-photo__when">25 часов назад</span></h1>
+        <a class="users-photo__text">
+          Самая кубанская в мире!
+        </a>
+        <a class="users-photo__liked">Нравится: 4</a>
+      </article>
+      <article class="users-photo__item">
 
-      <h1 class="users-photo__author">Максим<span class="users-photo__when">40 часов назад</span></h1>
-      <a class="users-photo__text">
-        Где снег-то?
-      </a>
-      <a class="users-photo__liked">Нравится: 150</a>
-    </article>
-    <article class="users-photo__item">
+        <h1 class="users-photo__author">Максим<span class="users-photo__when">40 часов назад</span></h1>
+        <a class="users-photo__text">
+          Где снег-то?
+        </a>
+        <a class="users-photo__liked">Нравится: 150</a>
+      </article>
+      <article class="users-photo__item">
 
-      <h1 class="users-photo__author">Надежда<span class="users-photo__when">45 часов назад</span></h1>
-      <a class="users-photo__text">
-        Всем GM и взаимные лайки!
-      </a>
-      <a class="users-photo__liked">Нравится: 2560</a>
-    </article>
-    <div class="users-photo__motivate">
+        <h1 class="users-photo__author">Надежда<span class="users-photo__when">45 часов назад</span></h1>
+        <a class="users-photo__text">
+          Всем GM и взаимные лайки!
+        </a>
+        <a class="users-photo__liked">Нравится: 2560</a>
+      </article>
+      <div class="users-photo__motivate">
       <p class="users-photo__text">
         Затмите их всех! Выкладывайте все, что накопилось в телефоне!
       </p>
     </div>
-
+    </div>
   </section>
   <section class="editor">
-
-    <div class="editor__options">
-
-      <form class="editor__form" action="#" method="post">
-        <input type="range" name="range" value="">
-        <button class="editor__send-post" type="submit" name="button-post">Запостить</button>
-        <button class="editor__dont-send-post" type="submit" name="dont-button-post">Отмена</button>
-      </form>
-
+    <div class="editor__wrapper">
+      <div class="editor__options">
+        <form class="editor__form" action="#" method="post">
+          <input class="editor__input" type="range" name="range" value="">
+          <button class="editor__send-post" type="submit" name="button-post">Запостить</button>
+          <button class="editor__dont-send-post" type="submit" name="dont-button-post">Отмена</button>
+        </form>
+      </div>
     </div>
-
   </section>
 
   <footer class="page-footer">
-
-    <div class="page-footer__socials">
-      <a class="page-footer__tw" href="#">Twitter</a>
-      <a class="page-footer__fb" href="#">Facebook</a>
-      <a class="page-footer__yt" href="#">YouTube</a>
-    </div>
-    <div class="page-footer__developed">
+    <div class="page-footer__wrapper">
+      <div class="page-footer__socials">
+        <a class="page-footer__tw" href="#">Twitter</a>
+        <a class="page-footer__fb" href="#">Facebook</a>
+        <a class="page-footer__yt" href="#">YouTube</a>
+      </div>
+      <div class="page-footer__developed">
       <span class="page-footer__text">Разработано</span>
     </div>
-
+    </div>
   </footer>
 
 </body>
