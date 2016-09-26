@@ -6,6 +6,7 @@
 .page-header__header {
   .container();
 
+  color: white;
   font-family: @font-family-light;
   font-size: 24px;
   font-weight: 300;
@@ -24,6 +25,10 @@
 
   background-color: #283645;
 }
+
+// header {   /* ПРОБА ДЛЯ ФЛЕКСА!! =============*/
+//   .container();
+// } /* ПРОБА ДЛЯ ФЛЕКСА!! =============*/
 
 .page-header__logo-wrapper {
   .container();
@@ -143,14 +148,24 @@
     display: block;
 }
 
+.page-header__header-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-  // .main-nav--closed .main-nav__user-items {
-  //   display: none;
-  // }
-
+  height: 240px;
+  background-image: url("../../img/bg-back-mobile@1x.jpg");
+}
 
 
 @media @tablet-widths {
+
+  .page-header__header-wrapper {
+    font-size: 50px;
+    // margin-top: 350px;
+    height: 440px;
+    background-image: url("../../img/bg-back-mobile@1x.jpg");
+  }
 
   .page-header {
     min-height: 110px;/* минимальная высота содержания */
@@ -158,13 +173,20 @@
     line-height: 44px;
   }
 
+  .page-header__header {
+    font-size: 50px;
+    line-height: normal;
+  }
+
   .page-header__logo {  /* Меню выпадет из шапки */
-    .clearfix();
+    // .clearfix();
+    display: flex;
+    align-items: center;
 
     // width: 100%;
     height: 110px;
 
-    background: grey;
+    background: rgba(0, 0, 0, 0.5);
   }
 
 }
@@ -184,9 +206,43 @@
     background: black;
   }
 
-  .page-header {
-    display: flex;
-    flex-direction: column;
+  .page-header__header {
+    font-size: 50px;
+    // margin-top: 350px;
+    // height: 395px;
+    // line-height: initial;
   }
 
+  /* ПРОБА ДЛЯ ФЛЕКСА!! =============*/
+  .page-header {
+    // display: flex;
+    // justify-content: space-around;
+    background: rgba(0, 0, 0, 0.5);
+    line-height: 18px;
+  }
+
+  .page-header__full-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    height: 110px;
+  }
+
+  .page-header__logo {
+    width: auto;
+    background: transparent;
+    height: auto;
+    padding-top: 0;
+    // margin: 0 auto;
+  }
+
+  .page-header__logo-wrapper {
+    width: auto;
+  }
+
+  .main-nav {
+    // padding-left: 175px;
+    // height: 110px;
+  }
 }

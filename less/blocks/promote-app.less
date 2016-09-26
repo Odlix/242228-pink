@@ -4,12 +4,16 @@
   // background-color: @promote-app-bg;
 
   // padding-top: 30px;
-  min-height: 270px;
+  // min-height: 270px;
 
-  background-image: url("../../img/bg-back-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  // background-image: url("../../img/bg-back-mobile@1x.jpg");
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  // background-position: center;
 
 }
 
@@ -20,8 +24,8 @@
   // background-position: left bottom, center;
   // background-repeat: no-repeat;
   .container();
-  background-image: url("../../img/iphone-hand-mobile@1x.png");
-  background-position: left bottom;
+  background-image: url("../../img/iphone-hand-mobile@1x.png"), url("../../img/bg-back-mobile@1x.jpg");
+  background-position: left bottom, center;
   background-repeat: no-repeat;
 
   height: 400px;
@@ -30,11 +34,16 @@
 
 .promote-app__wrapper {
   .container();
-  .clearfix();
+  // .clearfix();
 
   height: 270px;
 
-  background-color: @promote-app-bg;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  // background-color: @promote-app-bg;
+  background-color: transparent;
 }
 
 .promote-app__header {
@@ -53,9 +62,47 @@
   font-family: @font-family-bold;
   font-size: 18px;
   font-weight: 700;
-  line-height: 18px;
+  // line-height: 18px;
+  line-height: 55px;
   text-decoration: none;
   color: @promote-app-color-text;
+
+  text-align: center;
+
+  height: 55px;
+  border: 3px solid white;
+  border-radius: 130px;
+}
+
+.promote-app__download:hover {
+  color: @promote-app__download-color;
+  background: white;
+}
+
+.promote-app__download:active {
+  // opacity: 0.3;
+  color: #f1becc;
+}
+
+// .promote-app__download-wrapper {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//
+//   height: 55px;
+//   border: 3px solid white;
+//   border-radius: 130px;
+//
+// }
+
+.promote-app__download-wrapper:hover {
+  background: white;
+  color: @promote-app__download-color;
+}
+
+.promote-app__icons {
+  display: flex;
+  justify-content: space-around;
 }
 
 .promote-app__text {
@@ -66,26 +113,49 @@
   font-size: 14px;
   font-weight: 300;
   line-height: 24px;
+
+  width: 240px;
+  align-self: center;
+
+  margin: 0;
+
 }
 
 @media @tablet-widths {
 
   .promote-app {
-    background-position: center -100px;
+    height: 620px;
+
+    background-image: url("../../img/bg-back-mobile@1x.jpg");
+    background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
+
+    flex-direction: row-reverse;
+  }
+
+  .promote-app__wrapper {
+    background: transparent;
+
+    width: 295px;
+    height: 405px;
   }
 
   .promote-app__header {
     display: block;
   }
 
+  .promote-app-hand {
+    background-image: none;
+    background-image: url("../../img/iphone-hand-mobile@1x.png");
+    background-position: left bottom;
+    background-repeat: no-repeat;
+  }
+
   .promote-app__text {
     font-size: 18px;
   }
 
-  .promote-app__wrapper {
-    background: transparent;
-  }
 }
 
 @media @desktop-widths {
