@@ -10,21 +10,23 @@
 
 </head>
 <body>
-  <header class="page-header">
+  <header class="page-header main-nav--closed main-nav--nojs"> <!--переключатель для меню-->
     <div class="page-header__logo">
-      <div class="page-header__logo-wrapper">
+      <div class="page-header__logo-wrapper"> <!-- бэм нарушен баттоном! + сделать на других страницах -->
         <a>
           <img src="img/logo-pink-white-mobile.svg" alt="Pink" width="75" height="22">
         </a>
+        <button class="main-nav__toggle" type="button">Открыть/закрыть</button>
       </div>
-    </div>
+    </div> <!-- button переместить в лого -->
     <nav class="main-nav">
-      <button class="main-nav__toggle main-nav__toggle--closed" type="button">Открыть/закрыть</button>
+      <!-- <button class="main-nav__toggle" type="button">Открыть/закрыть</button> -->
       <div class="main-nav__wrapper">
         <ul class="main-nav__items">
-        <li class="main-nav__item"><a class="main-nav__link" href="index.html">главная</a></li>
+        <!-- <li class="main-nav__item main-nav__item--active"><a class="main-nav__link" href="index.html">главная</a></li> -->
+        <li class="main-nav__item"><a class="main-nav__link" href="index.html">главная</a></li> <!--Отключил через css pointer-events none-->
         <li class="main-nav__item"><a class="main-nav__link" href="photo.html">фотографии</a></li>
-        <li class="main-nav__item"><a class="main-nav__link" href="form.html">конкурс</a></li>
+        <li class="main-nav__item  main-nav__item--active"><a class="main-nav__link   main-nav__link--active" href="form.html">конкурс</a></li>
         <li class="main-nav__item"><a class="main-nav__link" href="#">html academy</a></li>
       </ul>
       </div>
@@ -129,5 +131,21 @@
     </div>
   </footer>
 
+  <script>
+    var navMain = document.querySelector('.page-header');
+    var navToggle = document.querySelector('.main-nav__toggle');
+
+    navMain.classList.remove('main-nav--nojs');
+
+    navToggle.addEventListener('click', function() {
+      if (navMain.classList.contains('main-nav--closed')) {
+        navMain.classList.remove('main-nav--closed');
+        navMain.classList.add('main-nav--opened');
+      } else {
+        navMain.classList.add('main-nav--closed');
+        navMain.classList.remove('main-nav--opened');
+      }
+    });
+  </script>
 </body>
 </html>
