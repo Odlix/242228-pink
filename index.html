@@ -33,29 +33,37 @@
         </div>
       <!-- </div> -->
     </header>
-    <section class="promote-app">  <!-- wrapper? -->
-      <div class="promote-app-hand">
-        <!-- <img src="img/iphone-hand-mobile@1x.png" alt="Hand with phone" width="320" height="314"> -->
-      </div>
-      <div class="promote-app__wrapper">
-        <h2 class="promote-app__header visually-hidden">Взгляните на жизнь иначе!</h2> <!-- Не забыть про hidden -->
-        <!-- <div class="promote-app__download-wrapper"> -->
-          <a class="promote-app__download" href="#">Скачать приложение</a>
-        <!-- </div>        -->
-        <div class="promote-app__icons">
-          <a class="promote-app__icon" href="#"><img src="./img/logo-apple.svg" alt="Apple" width="47" height="56"></a>
-          <a class="promote-app__icon" href="#"><img src="./img/logo-android.svg" alt="Android" width="47" height="56"></a>
-          <a class="promote-app__icon" href="#"><img src="./img/logo-microsoft.svg" alt="Microsoft" width="47" height="56"></a>
+    <section class="promote-app">
+
+      <div class="promote-app-full-wrapper">
+
+        <div class="promote-app-hand">
+          <!-- <img src="img/iphone-hand-mobile@1x.png" alt="Hand with phone" width="320" height="314"> -->
+        </div> <!-- временно изображение на фон -->
+        <div class="promote-app__wrapper-block">
+          <h2 class="promote-app__header">Взгляните на жизнь иначе!</h2> <!-- Не забыть про hidden -->
+          <!-- <div class="promote-app__download-wrapper"> -->
+            <a class="promote-app__download" href="#">Скачать приложение</a>
+          <!-- </div>        -->
+          <div class="promote-app__icons">
+            <a class="promote-app__icon" href="#"><img src="./img/logo-apple.svg" alt="Apple" width="47" height="56"></a>
+            <a class="promote-app__icon" href="#"><img src="./img/logo-android.svg" alt="Android" width="47" height="56"></a>
+            <a class="promote-app__icon" href="#"><img src="./img/logo-microsoft.svg" alt="Microsoft" width="47" height="56"></a>
+          </div>
+          <p class="promote-app__text">
+            Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+          </p>
         </div>
-        <p class="promote-app__text">
-          Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
-        </p>
+
       </div>
+
     </section>
     <section class="description">
       <div class="description__wrapper">
-        <h2 class="description__slogan">Устали от серости мегаполиса? </h2>
-        <h2 class="description__slogan description__slogan--shorter">Нам есть что вам предложить!</h2>
+        <div class="description__slogan-wrapper">
+          <h2 class="description__slogan">Устали от серости мегаполиса? </h2>
+          <h2 class="description__slogan description__slogan--shorter">Нам есть что вам предложить!</h2>
+        </div>
         <div class="description__advantages">
           <div class="description__item">
             <span class="description__header">Поднимает настроение</span>
@@ -75,17 +83,26 @@
               Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
             </p>
           </div>
-          <div class="description__effect">
-            <span class="description__header-big">Эффект на 24 часа!</span>
-            <p class="description__text">
-              Британские ученые провели исследования
-              и доказали, что положительный эффект
-              от использования приложения длится
-              целые сутки!
-            </p>
-            <a class="description__link" href="#">Узнать больше об исследовании</a>
-          </div>
+
         </div>
+          <div class="description__phone">
+            <img class="description__phone-img" src="./img/iphone-screen-mobile@1x.png" alt="Phone"> <!-- width и height через css для даптивной графики -->
+          </div>
+          <div class="description__effect">
+            <div class="description__effect-watch-wrapper">
+              <img class="description__effect-watch" src="./img/sek.png" alt="watch" />
+            </div>
+            <div class="description__effect-about">
+              <span class="description__header-big">Эффект на 24 часа!</span>
+              <p class="description__text">
+                Британские ученые провели исследования
+                и доказали, что положительный эффект
+                от использования приложения длится
+                целые сутки!
+              </p>
+              <a class="description__link" href="#">Узнать больше об исследовании</a>
+            </div>
+          </div>
       </div>
     </section>
     <section class="reviews">

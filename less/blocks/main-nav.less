@@ -1,7 +1,8 @@
 .main-nav {
   // position: relative;
 
-  width: 320px;
+  // width: 320px;
+  width: auto;
   min-height: 65px;
   margin: 0 auto;
 
@@ -128,11 +129,18 @@
 }
 
 .main-nav__item {
-  padding-top: 25px;
-  padding-bottom: 23px;
+  // padding-top: 25px;
+  // padding-bottom: 23px;
+
+  height: 65px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   background-color: @main-nav-bg;
   box-shadow: @box-shadow-menu-li;
-  text-align: center;
+  // text-align: center;
 
 }
 
@@ -201,10 +209,12 @@
   .main-nav__items {
     min-height: 0;
     background: transparent;
+
+    display: flex;
   }
 
   .main-nav__item {
-    display: inline-block;
+    // display: inline-block;
     background: transparent;
   }
 
@@ -215,6 +225,10 @@
     // background-color: transparent;
     box-shadow: none;
     text-align: center;
+  }
+
+  .main-nav__item:last-child {
+    margin-right: 0;
   }
 
   .main-nav__link {
