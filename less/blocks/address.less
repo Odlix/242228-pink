@@ -1,4 +1,5 @@
 .address {
+  background: white;
 
   padding-top: 50px;
   font-style: normal;  /* Не работает */
@@ -18,7 +19,7 @@
 
 .address__info {
 
-  margin-bottom: 45px;
+  padding-bottom: 45px;
 }
 
 .address_header {
@@ -38,6 +39,14 @@
 
 }
 
+.address__map {
+  height: 200px;
+
+  background-image: url("../../img/bg-map-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 @media @tablet-widths {
   .address__slogan {
     margin: 0 auto;
@@ -52,6 +61,10 @@
     display: inline-block;
     margin-right: 80px;
   }
+
+  .address__map {
+    height: 380px;
+  }
 }
 
 @media @desktop-widths {
@@ -62,5 +75,9 @@
 
   .address__item:last-child {  /* переместить в центр */
     // color: green;
+  }
+
+  .address__map {
+    height: 500px;
   }
 }
