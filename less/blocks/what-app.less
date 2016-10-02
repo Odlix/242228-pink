@@ -1,5 +1,8 @@
 .what-app {
-  margin-top: 40px;
+  padding-top: 40px;
+  // padding-bottom: 40px;
+
+  background: @what-app-bg;
 }
 
 .what-app__wrapper {
@@ -32,7 +35,7 @@ input[type="radio"] + .what-app__label {
   font-weight: 400;
 
   // padding-left: 70px;
-  margin-bottom: 45px;
+  margin-bottom: 35px;
   cursor: pointer;
 
 
@@ -61,7 +64,43 @@ input[type="radio"]:checked + label::before {
   width: 39px;
   height: 39px;
   border: 2px solid #e5e5e5;
-  background-color: red;
+  background: white;
+  background-image: url("../../img/icon-map-marker.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 
   margin-right: 30px;
+}
+
+.what-app__header {
+
+  margin-top: -65px;
+  width: 370px;
+  text-align: center;
+  margin-left: 70px;
+
+  background: white;
+}
+
+@media @tablet-widths {
+  .what-app {
+    background: white;
+    padding-bottom: 2px;
+  }
+
+  .what-app__wrapper {
+    box-sizing: border-box;
+
+    border: @contacts__wrapper-border;
+
+    height: 300px;
+
+    padding-top: 55px;
+    padding-left: 60px;
+    padding-bottom: 55px;
+  }
+}
+
+@media @desktop-widths {
+
 }

@@ -1,5 +1,7 @@
 .describe-feelings {
-  margin-top: 60px;
+  padding-top: 60px;
+
+  background: white;
 }
 
 .describe-feelings__wrapper {
@@ -22,11 +24,39 @@
 }
 
 .describe-feelings__area {
+
   .describe-feelings__area-size;
 
+  width: 100%;
+
+  margin-bottom: 50px;
+}
+
+.describe-feelings__button-wrapper {
+  .container();
+}
+
+.describe-feelings__send-feels {
+
+  width: 100%;
+  margin-bottom: 45px;
+
+  border: none;
+
+  color: white;
+  font-size: 18px;
+  background: #2aab6d;
+  padding: 25px 48px 24px 47px;
+  text-decoration: none;
+}
+
+.describe-feelings__send-feels:hover {
+  background: #1c9b5e;
+  text-decoration: none;
 }
 
 .describe-feelings__legend {
+
   color: @describe-feelings__legend;
   font-family: @font-family-light;
   font-size: 14px;
@@ -41,12 +71,41 @@
 }
 
 @media @tablet-widths {
+  .describe-feelings__wrapper {
+    box-sizing: border-box;
+
+    padding-top: 47px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 55px;
+
+    border: @achievements__wrapper-border;
+  }
+
+  .describe-feelings__header {
+    margin-top: -56px;
+    width: 260px;
+    text-align: center;
+    margin-left: 90px;
+
+    background: white;
+  }
+
   .describe-feelings__area {
     width: 100%;
+    margin-bottom: 0;
+  }
+
+  .describe-feelings__button-wrapper {
+    margin-top: 65px;
+  }
+
+  .describe-feelings__send-feels {
+    width: 300px;
   }
 
   .describe-feelings__legend {
-    
+
     float: right;
   }
 }

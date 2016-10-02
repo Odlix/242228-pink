@@ -1,22 +1,208 @@
 .editor {
-
+  height: 755px;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  background: @editor-bg;
 }
 
 .editor__wrapper {
   .container();
+
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.editor__image-wrapper {
+  align-self: center;
+}
+
+.editor__options {
+  // width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.editor__options-images {
+  flex-basis: 100%;
+  display: flex;
+  justify-content: space-around;
+
+  margin-bottom: 35px;
+}
+
+.editor__form-wrapper {
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .editor__input {
   display: block;
+  width: 100%;
 }
+
+.editor__input-fill,
+.editor__input-contrast {
+  display: none;
+}
+
+.editor__buttons {
+  text-align: center;
+}
+
+.editor__button {
+  width: 280px;
+  height: 55px;
+  border-radius: 130px;
+
+  font-family: @font-family-bold;
+  font-size: 18px;
+  font-weight: 700;
+  // line-height: 18px;
+  // line-height: 55px;
+  text-decoration: none;
+  color: @editor-button-post;
+  // background: white;
+  border: 3px solid @editor-button-post;
+  background: white;
+  text-align: center;
+}
+
+.editor__send-post {
+  margin-bottom: 12px;
+}
+
+.editor__dont-send-post {
+  color: @editor-button-cansel;
+  border: 3px solid @editor-button-cansel;
+
+}
+
+// .editor__button:hover {
+//   // color: @promote-app__download-color;
+//   // background: white;
+// }
+//
+// .editor__button:active {
+//   // opacity: 0.3;
+//   color: #f1becc;
+// }
+
+.editor__range-controls {
+  position: relative;
+
+  height: 41px;
+  padding-top: 39px;
+  padding-right: 20px;
+  padding-left: 20px;
+
+  border-radius: 5px;
+  background: #f1f1f1;
+  margin-bottom: 15px;
+}
+
+.editor__scale {
+  height: 2px;
+  background: black;
+}
+
+.editor__bar {
+  width: 70%;
+  height: 2px;
+  background: black;
+}
+
+.editor__toggle {
+  position: absolute;
+  top: 34px;
+  left: 185px;
+
+  width: 8px;
+  height: 8px;
+  border: 2px solid #d22856;
+  border-radius: 50%;
+  background: white;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+
+  cursor: pointer;
+
+}
+
+.editor__range-controls--fill,
+.editor__range-controls--contrast {
+  display: none;
+}
+
 
 @media @tablet-widths {
   .editor {
-    height: 511px;
+    height: 460px;
+    padding-top: 55px;
+  }
+
+  .editor__range-controls--fill,
+  .editor__range-controls--contrast {
+    display: block;
+  }
+
+  .editor__range-controls {
+    height: 20px;
+    padding-top: 20px;
+
+    width: 200px;
+  }
+
+  .editor__toggle {
+    top: 15px;
   }
 
   .editor__options {
-    float: right;
-    width: 300px;
+    display: flex;
+    flex-direction: column;
   }
+
+  .editor__options-images {
+    flex-direction: column;
+  }
+
+  .editor__toggle--fill {
+    left: 55px;
+  }
+
+  .editor__toggle--contrast {
+    left: 130px;
+  }
+
+  .editor__wrapper {
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .editor__image-wrapper {
+    flex-basis: 50%;
+
+    // margin-right: 45px;
+  }
+
+  .editor__options-images {
+    flex-basis: 60%;
+  }
+
+  .editor__options {
+    flex-basis: 50%;
+    height: 190px;
+  }
+
+  .editor__buttons {
+    flex-basis: 50%;
+    width: 260px;
+  }
+
+}
+
+@media @desktop-widths {
+
 }

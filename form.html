@@ -31,7 +31,6 @@
           </div>
         </nav>
       </div>
-
       <div class="page-header__header-wrapper">
         <h1 class="page-header__header">Конкурс на самое безбашенное путешествие с Пинк</h1>
       </div>
@@ -46,15 +45,15 @@
       </p>
       <form class="form" action="#" method="post">
       <div class="name__enter-items">
-      <div class="name__enter">
-        <label class="name__label-input" for="id-surname">Фамилия:</label>
-        <input class="name__input" type="text" name="surname" id="id-surname" placeholder="Укажите фамилию">
-      </div>
-      <div class="name__enter">
-        <label class="name__label-input" for="id-name">Имя:</label>
-        <input class="name__input" type="text" name="name" id="id-name" placeholder="Введите ваше имя">
-      </div>
-      <div class="name__enter">
+        <div class="name__enter">
+          <label class="name__label-input" for="id-surname">Фамилия:</label>
+          <input class="name__input" type="text" name="surname" id="id-surname" placeholder="Укажите фамилию">
+        </div>
+        <div class="name__enter">
+          <label class="name__label-input" for="id-name">Имя:</label>
+          <input class="name__input" type="text" name="name" id="id-name" placeholder="Введите ваше имя">
+        </div>
+        <div class="name__enter">
         <label class="name__label-input" for="id-patronymic">Отчество:</label>
         <input class="name__input" type="text" name="patronymic" id="id-patronymic" placeholder="Ну и отчество тоже">
       </div>
@@ -86,6 +85,7 @@
   </section>
   <section class="contacts">
     <div class="contacts__wrapper">
+      <h3 class="contacts__header">контактная информация</h3>
         <div class="contacts__enter">
           <label class="contacts__label-input" for="id-telephone">Номерок телефончика:</label>
           <input class="contacts__input" type="text" name="telephone" id="id-telephone" placeholder="Номер, пожалуйста">
@@ -115,21 +115,29 @@
       <h3 class="describe-feelings__header">Опишите свои эмоции</h3>
 
       <textarea class="describe-feelings__area" name="describe-feels" id="feelings-text">Можно прям в красках, не стесняясь в выражениях</textarea>
-      <button class="describe-feelings__send-feels" type="submit" name="button-feels">Отправить форму</button>
-      <small class="describe-feelings__legend"><sup class="describe-feelings__small">*</sup> — обязательные поля</small> <!-- Взял из примера -->
+
       </form>
+    </div>
+    <div class="describe-feelings__button-wrapper">
+      <button class="describe-feelings__send-feels" type="submit" name="button-feels">Отправить форму</button>
+      <small class="describe-feelings__legend"><sup class="describe-feelings__small">*</sup> — обязательные поля</small>
     </div>
   </section>
   <footer class="page-footer">
     <div class="page-footer__wrapper">
+      <div class="page-footer__logo-wrapper">
+        <img class="page-footer__logo" src="./img/logo-pink-blue-mobile.svg" alt="logo" />
+      </div>
       <div class="page-footer__socials">
-        <a class="page-footer__tw" href="#">Twitter</a>
-        <a class="page-footer__fb" href="#">Facebook</a>
-        <a class="page-footer__yt" href="#">YouTube</a>
+        <!-- <a class="page-footer__tw" href="#">Twitter</a> -->
+        <a class="page-footer__link" href="#"><img class="page-footer__img page-footer__img--tw" src="./img/icon-twitter.svg" alt="tw" /></a>
+        <a class="page-footer__link" href="#"><img class="page-footer__img page-footer__img--fb" src="./img/icon-facebook.svg" alt="fb" /></a>
+        <a class="page-footer__link" href="#"><img class="page-footer__img page-footer__img--yt" src="./img/icon-youtube.svg" alt="yt" /></a>
       </div>
       <div class="page-footer__developed">
-      <span class="page-footer__text">Разработано</span>
-    </div>
+        <span class="page-footer__text">Разработано</span>
+        <img class="page-footer__developed-img" src="./img/logo-htmlacademy.svg" alt="htmlacademy" />
+      </div>
     </div>
   </footer>
 
